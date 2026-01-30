@@ -1,4 +1,4 @@
-# Delos API (NestJS)
+# Fire Aware API (NestJS)
 
 Backend API for address geocoding + wildfire lookup (NASA FIRMS).  
 Addresses are normalized and cached in PostgreSQL to avoid repeated external calls.
@@ -32,7 +32,7 @@ Create a `.env` file (or copy from `.env.example`).
 
 - `DATABASE_URL` (recommended)
 
-  Example: `postgres://postgres:postgres@localhost:5432/delos`
+  Example: `postgres://postgres:postgres@localhost:5432/fire_aware`
 - `GOOGLE_MAPS_API_KEY` 
 - `FIRMS_MAP_KEY`
 
@@ -54,10 +54,10 @@ $ docker compose up -d
 (Alternative) Run a standalone container:
 
 ```bash
-$ docker run -d --name delos-api-db \
+$ docker run -d --name fire_awaredb \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=delos \
+  -e POSTGRES_DB=fire \
   -p 5432:5432 postgres:15
 
 ```
