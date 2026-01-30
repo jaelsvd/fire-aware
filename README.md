@@ -62,6 +62,19 @@ $ docker run -d --name fire_awaredb \
 
 ```
 
+### Create database (optional)
+
+```bash
+$ docker exec -i fire-aware-db-1 psql -U postgres -c "CREATE DATABASE fire_awaredb;"
+```
+
+### Create database (optional)
+
+```bash
+$ docker exec -i fire-aware-db-1 psql -U postgres -c "CREATE DATABASE fire_awaredb;"
+```
+
+
 ### 4) Run Migrations
 Generate a migration (when adding schema changes) or run existing migrations:
 
